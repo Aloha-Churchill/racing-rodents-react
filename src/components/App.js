@@ -4,7 +4,6 @@ import CreateAccount from './CreateAccount'
 import {Container} from 'react-bootstrap'
 import { AuthProvider } from '../contexts/AuthContext'
 import { BrowserRouter as Router, Switch,  Route} from 'react-router-dom'
-import Dashboard from './Dashboard'
 import Login from './Login'
 import PrivateRoute from './PrivateRoute'
 import ForgotPassword from './ForgotPassword'
@@ -12,7 +11,7 @@ import UpdateProfile from './UpdateProfile'
 import Welcome from './Welcome'
 import Navigation from './Navigation'
 import Profile from './Profile'
-
+import LoadData from './LoadData'
 
 function App() {
   return(
@@ -27,8 +26,8 @@ function App() {
               <Route path='/createaccount' component={CreateAccount} />
               <Route path='/login' component = {Login} />
               <Route path='/forgotpassword' component = {ForgotPassword} />
-              <PrivateRoute path='/dashboard' component= {Dashboard} />
               <PrivateRoute path='/profile' component= {Profile} />
+              <PrivateRoute path='/dashboard' component={LoadData} />
             </Switch>
           </AuthProvider>
         </Router>

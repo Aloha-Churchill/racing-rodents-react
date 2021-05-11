@@ -17,10 +17,18 @@ export function AuthProvider({children}) {
             auth.onAuthStateChanged(user => {
                 if(user) {
                     console.log(user.uid)
-                    db.ref('Users').child(user.uid) //00000-Akjalsdjkla
+                    db.ref('Users').child(user.uid)
                     db.ref('Users/' + device_id + user.uid).set({
-                        distance: "",
-                        account_created: "yes"
+                        total_distance: 0,
+                        daily_distance: 0,
+                        average_daily_distance: 0,
+                        clockwise_distance: 0,
+                        counterclockwise_distance: 0,
+                        current_direction: 0,
+                        current_speed: 0,
+                        average_speed: 0,
+                        total_time: 0,
+                        daily_time: 0    
                     })
                 }
             })
