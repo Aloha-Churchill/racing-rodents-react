@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/racing-rodents-react/static/css/main.d1d7d92a.chunk.css",
+    "main.js": "/racing-rodents-react/static/js/main.d13c4453.chunk.js",
+    "main.js.map": "/racing-rodents-react/static/js/main.d13c4453.chunk.js.map",
+    "runtime-main.js": "/racing-rodents-react/static/js/runtime-main.ae511c4a.js",
+    "runtime-main.js.map": "/racing-rodents-react/static/js/runtime-main.ae511c4a.js.map",
+    "static/css/2.800be05e.chunk.css": "/racing-rodents-react/static/css/2.800be05e.chunk.css",
+    "static/js/2.d381157c.chunk.js": "/racing-rodents-react/static/js/2.d381157c.chunk.js",
+    "static/js/2.d381157c.chunk.js.map": "/racing-rodents-react/static/js/2.d381157c.chunk.js.map",
+    "index.html": "/racing-rodents-react/index.html",
+    "static/css/2.800be05e.chunk.css.map": "/racing-rodents-react/static/css/2.800be05e.chunk.css.map",
+    "static/css/main.d1d7d92a.chunk.css.map": "/racing-rodents-react/static/css/main.d1d7d92a.chunk.css.map",
+    "static/js/2.d381157c.chunk.js.LICENSE.txt": "/racing-rodents-react/static/js/2.d381157c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae511c4a.js",
+    "static/css/2.800be05e.chunk.css",
+    "static/js/2.d381157c.chunk.js",
+    "static/css/main.d1d7d92a.chunk.css",
+    "static/js/main.d13c4453.chunk.js"
+  ]
+}
