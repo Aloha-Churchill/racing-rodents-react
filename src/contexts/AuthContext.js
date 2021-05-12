@@ -22,7 +22,6 @@ export function AuthProvider({children}) {
                     console.log(user.displayName)
                     db.ref('Users').child(user.uid)
                     db.ref('Users/' + device_id).set({
-                        user_id: user.uid,
                         total_distance: 0,
                         daily_distance: 0,
                         average_daily_distance: 0,

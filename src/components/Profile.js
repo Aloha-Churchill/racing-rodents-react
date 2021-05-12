@@ -19,16 +19,13 @@ export default function Profile() {
         }
     }
     return (
-        <div>
-            <h1 style={{padding:'10px'}}>Your Account</h1>
+        <div class='container rounded my-3 bg-light pt-4'>
+            <h1 class='text-center' style={{padding:'10px'}}>Your Account</h1>
             {error && <Alert variant='danger'>{error}</Alert>}
-            <p><strong>ID:</strong> {currentUser.uid}</p>
-            <p><strong>Email:</strong> {currentUser.email}</p>
-            <div>
-                <Link to='/updateprofile' className='btn btn-primary'>Update Profile</Link>
-            </div>
-            <div>
-                <Button type="submit" onClick={handleLogout}>Logout</Button>
+            <p style={{marginLeft: '25px'}}><strong>Email:</strong> {currentUser.email}</p>
+            <div style={{marginBottom: '30px'}}>
+                <Link to='/updateprofile' className='btn btn-primary' style={{marginLeft: '20px'}}>Update Profile</Link>
+                <Button type="submit" onClick={handleLogout} style={{marginLeft: '20px'}}>Logout</Button>
             </div>
             
         </div>
