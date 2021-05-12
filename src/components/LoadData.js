@@ -14,16 +14,12 @@ export default function LoadData() {
         const ref = db.ref('Users')
         ref.on('value', (snapshot) => {
             let wheel_data = snapshot.val()
-            let id_regex = new RegExp(`.....${currentUser.uid}`)
-            let key_arr = Object.keys(wheel_data)
-            let key = key_arr.find(value => id_regex.test(value))
-            let user_data = wheel_data[key]
-            console.log(user_data)
+            let user_data = wheel_data[currentUser.displayName]
             setUserData(user_data)
         })
 
         return () => ref.off();
-    }, [])
+    }, [currentUser.displayName])
     
     async function handleLogout(){
         setError('')

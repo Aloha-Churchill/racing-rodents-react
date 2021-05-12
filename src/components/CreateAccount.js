@@ -9,7 +9,7 @@ export default function CreateAccount() {
     const password_val = useRef()
     const password_confirm_val = useRef()
     const device_id_val = useRef()
-    const { createaccount, currentUser } = useAuth()
+    const { createaccount} = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()

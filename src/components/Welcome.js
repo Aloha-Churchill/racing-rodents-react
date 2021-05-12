@@ -1,7 +1,5 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Card} from 'react-bootstrap'
-import {useAuth} from '../contexts/AuthContext'
-import {Link} from 'react-router-dom'
 
 export default function Welcome() {
     return (

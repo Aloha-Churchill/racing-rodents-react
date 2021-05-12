@@ -16,9 +16,13 @@ export function AuthProvider({children}) {
         return auth.createUserWithEmailAndPassword(email, password).then(cred => {
             auth.onAuthStateChanged(user => {
                 if(user) {
-                    console.log(user.uid)
+                    user.updateProfile({
+                        displayName: device_id
+                    })
+                    console.log(user.displayName)
                     db.ref('Users').child(user.uid)
-                    db.ref('Users/' + device_id + user.uid).set({
+                    db.ref('Users/' + device_id).set({
+                        user_id: user.uid,
                         total_distance: 0,
                         daily_distance: 0,
                         average_daily_distance: 0,
@@ -33,7 +37,6 @@ export function AuthProvider({children}) {
                 }
             })
         })
-
     }
 
     function login(email, password){
