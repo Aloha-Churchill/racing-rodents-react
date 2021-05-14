@@ -57,8 +57,8 @@ export default function LoadData() {
             <table class="table table-bordered" style={{marginTop:'20px'}}>
                 <thead class='thead-light'>
                     <tr>
-                    <th scope="col">Daily Distance</th>
                     <th scope="col">Total Distance</th>
+                    <th scope="col">Daily Distance</th>
                     <th scope="col">Total Clockwise Distance</th>
                     <th scope="col">Total Counterclockwise Distance</th>
                     </tr>
